@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <title>Medicare : Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="img/logo1.png"/>
+	<!-- Date
+    ================================================== -->  
+	<script type="text/javascript" src="https://formden.com/static/cdn/formden.js"></script>
+	<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+	<link rel="stylesheet" href="https://formden.com/static/cdn/font-awesome/4.4.0/css/font-awesome.min.css" />
+	<style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: black}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: white !important;} .asteriskField{color: red;}</style>
+    <!-- date end
+    ================================================== -->  
+	
+    <!-- CSS
+    ================================================== -->       
+    <!-- Bootstrap css file-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font awesome css file-->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Superslide css file-->
+    <link rel="stylesheet" href="css/superslides.css">
+    <!-- Slick slider css file -->
+    <link href="css/slick.css" rel="stylesheet"> 
+    <!-- Circle counter cdn css file -->
+     
+    <!-- smooth animate css file -->
+    <link rel="stylesheet" href="css/animate.css"> 
+    <!-- preloader -->
+    <link rel="stylesheet" href="css/queryLoader.css" type="text/css" />
+    <!-- gallery slider css -->
+    <link type="text/css" media="all" rel="stylesheet" href="css/jquery.tosrus.all.css" />    
+    <!-- Default Theme css file -->
+    <link id="switcher" href="css/themes/default-theme.css" rel="stylesheet">
+    <!-- Main structure css file -->
+    <link href="style.css" rel="stylesheet">
+   
+  
+   
+ 
+  </head>
+  <body ng-app="myApp" ng-controller="myCtrl">    
+
+    <!-- SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#"></a>
+    <!-- END SCROLL TOP BUTTON -->
+
+    <!--=========== BEGIN HEADER SECTION ================-->
+    <header id="header">
+      <!-- BEGIN MENU -->
+      <div class="menu_area">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">  <div class="container">
+            <div class="navbar-header">
+              <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <!-- LOGO -->
+             
+			   <!-- IMG BASED LOGO  -->
+               <a class="navbar-brand" href="index.html"><img src="img/logo1.jpg" style="with:100px;height:40px;margin-top:-20px;" alt="logo"></a> 
+              <!-- TEXT BASED LOGO -->			   
+              <a class="navbar-brand" href="index.html">Medi<span>Care</span></a>              
+                   
+                     
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+                <li class="active"><a href="index1.html">Home</a></li>
+				 <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">BabyCare<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="404.html">BabyFood</a></li>
+                    <li><a href="#">Baby Health</a></li>
+                    <li><a href="#">Daily Care</a></li> 
+					<li><a href="#">Daily Development</a></li>
+					<li><a href="#">Baby Safty</a></li>
+                    <li><a href="#">Benifts of BreastFeeding</a></li>					
+                  </ul>
+                </li> 
+                <li><a href="scholarship.html">Pregnancy</a></li>
+                <li><a href="events-archive.html">FindDoctors</a></li>
+                <li><a href="gallery.html">Contact</a></li>                
+                <li><a href="blog-archive.html">Blog</a></li>
+                
+              </ul>           
+            </div><!--/.nav-collapse -->
+          </div>     
+        </nav>  
+      </div>
+      <!-- END MENU -->    
+    </header>
+ 
+
+    <!--=========== BEGIN OUR Main SECTION ================-->
+    
+  
+
+ 
+
+	<section style="margin-top:200px;">
+      <div class="container">
+        <div class="row">
+                <div class="bootstrap-iso">
+ <div class="container-fluid">
+  <div class="row">
+   <div class="col-md-6 col-sm-6 col-xs-12">
+    <form  class="form-horizontal" method="post">
+	 <div style="margin-left:15px"> 
+	 <div class="form-group">
+		<label for="exampleInputEmail1">Baby Name</label>
+		<input type="text" class="form-control" ng-model="bName"  placeholder="Baby Name">
+	  </div>
+	  
+	  <div class="form-group">
+		<label for="exampleInputEmail1">Parents Mobile number</label>
+		<input type="text" class="form-control" ng-model="pMobile"  placeholder="Mobile">
+	  </div>
+	  </div>
+     <div class="form-group ">
+     
+      <div class="col-sm-10">
+       <div class="input-group">
+        <div class="input-group-addon">
+         <i class="fa fa-calendar">
+         </i>
+        </div>
+        <input class="form-control" id="date"  ng-model ="bDate" name="date" placeholder="MM/DD/YYYY" type="text"/>
+       </div>
+      </div>
+     </div>
+     <div class="form-group">
+      <div class="col-sm-10 col-sm-offset-2">
+       <input name="_honey" style="display:none" type="text"/>
+       <button class="btn btn-primary " ng-click ="dateInsert(bName ,pMobile, bDate)" name="submit" type="submit">
+        Submit
+       </button>
+      </div>
+     </div>
+    </form>
+	<div style="text-align:center"><h1>{{content}}</h1></div>
+	
+   </div>
+  </div>
+ </div>
+</div>
+           
+       </div>
+      </div>
+    </section>
+	<script>
+	   var app = angular.module('myApp', []);
+       app.controller('myCtrl', function($scope, $http) {
+          
+		  
+	   //$scope.dateInsert = function(bName ,pMobile,bDate) {
+		 //var date =new Date(bDate);
+		 //var url='http://localhost:3392/datesubmit/?bName='+bName+'&pMobile='+pMobile+'&bDate='+bDate;
+		 //console.log(url);
+		 //  $http.get(url).then(function(response) {
+           //    $scope.content = response.data;
+		
+            //}, function(response) {
+              //  $scope.content = "Something went wrong";
+           });
+
+    return {
+       
+           $scope.dateInsert = function (scope,bName ,pMobile,bDate) {
+
+            var dateFormat = attrs['date'] || 'yyyy-MM-dd';
+           
+            bDate.$formatters.unshift(function (modelValue) {
+                console.log( dateFilter(modelValue, dateFormat) );
+            });
+        }
+    };
+})
+      //};
+   
+        });
+		app.directive('date', function (dateFilter) {
+          return {
+          require:'ngModel',
+          link:function (scope, elm, attrs, ctrl) {
+
+            var dateFormat = attrs['date'] || 'yyyy-MM-dd';
+           
+            ctrl.$formatters.unshift(function (modelValue) {
+                return dateFilter(modelValue, dateFormat);
+            });
+        }
+    };
+})
+	</script>
+
+    <!--=========== BEGIN Main SECTION ================-->
+    <footer id="footer">
+      <!-- Start footer top area -->
+     
+      <!-- End footer top area -->
+
+      <!-- Start footer bottom area -->
+      <div class="footer_bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="footer_bootomLeft">
+                <p> Copyright &copy; All Rights Reserved</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="footer_bootomRight">
+                <p>Designed by Ajeet kumar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End footer bottom area -->
+    </footer>
+    <!--=========== END FOOTER SECTION ================--> 
+
+  
+
+    <!-- Javascript Files
+    ================================================== -->
+
+
+   
+    <!-- Custom js-->
+    <script src="js/custom.js"></script>
+	
+	
+	<!--   Date  -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+	<script>
+		$(document).ready(function(){
+			var date_input=$('input[name="date"]'); //our date input has the name "date"
+			var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+			date_input.datepicker({
+				format: 'mm/dd/yyyy',
+				container: container,
+				todayHighlight: true,
+				autoclose: true,
+			})
+		})
+	</script>
+   
+
+
+  </body>
+</html>

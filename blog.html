@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <title>Medicare : Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="img/logo1.png"/>
+
+    <!-- CSS
+    ================================================== -->       
+    <!-- Bootstrap css file-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font awesome css file-->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Superslide css file-->
+    <link rel="stylesheet" href="css/superslides.css">
+    <!-- Slick slider css file -->
+    <link href="css/slick.css" rel="stylesheet"> 
+    <!-- Circle counter cdn css file -->
+    <link rel='stylesheet prefetch' href='https://cdn.rawgit.com/pguso/jquery-plugin-circliful/master/css/jquery.circliful.css'>  
+    <!-- smooth animate css file -->
+    <link rel="stylesheet" href="css/animate.css"> 
+    <!-- preloader -->
+    <link rel="stylesheet" href="css/queryLoader.css" type="text/css" />
+    <!-- gallery slider css -->
+    <link type="text/css" media="all" rel="stylesheet" href="css/jquery.tosrus.all.css" />    
+    <!-- Default Theme css file -->
+    <link id="switcher" href="css/themes/default-theme.css" rel="stylesheet">
+    <!-- Main structure css file -->
+    <link href="style.css" rel="stylesheet">
+   
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>   
+    <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>    
+ <style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+.myLink {display: none}
+</style>
+   
+ 
+  </head>
+  <body>    
+
+    <!-- SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#"></a>
+    <!-- END SCROLL TOP BUTTON -->
+
+    <!--=========== BEGIN HEADER SECTION ================-->
+    <header id="header" >
+      <!-- BEGIN MENU -->
+      <div class="menu_area" >
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" >  <div class="container">
+            <div class="navbar-header">
+              <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <!-- LOGO -->
+             
+			   <!-- IMG BASED LOGO  -->
+               <a class="navbar-brand" href="index.html"><img src="img/logo1.jpg" style="with:100px;height:40px;margin-top:-20px;" alt="logo"></a> 
+              <!-- TEXT BASED LOGO -->			   
+              <a class="navbar-brand" href="index.html">Medi<span>Care</span></a>              
+                   
+                     
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+                <li class="active"><a href="index1.html">Home</a></li>
+				 <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">BabyCare<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="404.html">BabyFood</a></li>
+                    <li><a href="#">Baby Health</a></li>
+                    <li><a href="#">Daily Care</a></li> 
+					<li><a href="#">Daily Development</a></li>
+					<li><a href="#">Baby Safty</a></li>
+                    <li><a href="#">Benifts of BreastFeeding</a></li>					
+                  </ul>
+                </li> 
+                <li><a href="PargnancyFile.html">Pregnancy</a></li>
+                <li><a href="finddoctor.html">FindDoctors</a></li>
+				<li><a href="#">Blog</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#contactId">Contact</a></li>                
+                
+				<li><a href="#" data-toggle="modal" data-target="#signId"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#loginId"><span class="glyphicon glyphicon-log-in" ></span> Login</a></li>
+				   
+			<div class="modal fade" id="contactId" role="dialog">
+				<div class="modal-dialog">
+						
+						  <!-- Modal content-->
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <button type="button" class="close" data-dismiss="modal">&times;</button>
+							  <h4 class="modal-title">Contact Us </h4>
+							</div>
+					<div class="modal-body">
+						<form class="form-horizontal">
+							
+								<div class="form-group">
+									<div class="col-md-10 col-md-offset-1">
+										<input id="lname" name="name" type="text" placeholder="Frist Name" class="form-control">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-md-10 col-md-offset-1">
+										<input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<div class="col-md-10 col-md-offset-1">
+										<input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<div class="col-md-10 col-md-offset-1">
+										<input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<div class="col-md-10 col-md-offset-1">
+										<textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7"></textarea>
+									</div>
+								</div>
+
+								<div class="form-group"> 
+										<div class="col-sm-offset-2 col-md-offset-1 col-sm-10">
+										  <button type="submit" class="btn btn-primary ">Submit</button>
+										</div>
+							    </div>
+							
+						</form>
+						
+					</div>
+							<div class="modal-footer">
+								 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+				</div>
+								  
+			</div>
+		</div>
+				  <div class="modal fade" id="signId" role="dialog">
+						<div class="modal-dialog">
+						
+						  <!-- Modal content-->
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <button type="button" class="close" data-dismiss="modal">&times;</button>
+							  <h4 class="modal-title">Register </h4>
+							</div>
+							<div class="modal-body">
+							    <form class="form-horizontal">
+									<div class="form-group">
+										<label for="name" class="col-sm-2 control-label">YourName</label>
+										<div class="col-sm-10 col-md-8" >
+											<div class="input-group">
+												<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+												<input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
+											</div>
+										</div>
+									</div>
+									  <div class="form-group">
+										<label class="control-label col-sm-2" for="email">Email:</label>
+										<div class="col-sm-10 col-md-8 " >
+										  <div class="input-group">
+										  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+										  <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+										</div>
+										</div>
+									  </div>
+									  <div class="form-group" >
+									  
+										<label class="control-label col-sm-2" for="pwd">Password:</label>
+										<div class="col-sm-10 col-md-8"> 
+										   <div class="input-group">
+											  <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+											  <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+										   </div>
+										</div>
+									  </div>
+									  <div class="form-group" >
+									  
+										<label class="control-label col-sm-2" for="pwd">RePassword:</label>
+										<div class="col-sm-10 col-md-8"> 
+										   <div class="input-group">
+											  <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+											  <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+										   </div>
+										</div>
+									  </div>
+									  <div class="form-group"> 
+										<div class="col-sm-offset-2 col-sm-10 ">
+										  <div class="checkbox">
+											<label><input type="checkbox"> Remember me</label>
+										  </div>
+										</div>
+									  </div>
+									  <div class="form-group"> 
+										<div class="col-sm-offset-2 col-sm-10">
+										  <button type="submit" class="btn btn-primary">Register</button>
+										</div>
+									  </div>
+								</form>
+							</div>
+							<div class="modal-footer">
+							  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						  </div>
+						  
+						</div>
+					 </div>
+				 
+                  <div class="modal fade" id="loginId" role="dialog">
+						<div class="modal-dialog">
+						
+						  <!-- Modal content-->
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <button type="button" class="close" data-dismiss="modal">&times;</button>
+							  <h4 class="modal-title">Login </h4>
+							</div>
+							<div class="modal-body">
+							    <form class="form-horizontal">
+									  <div class="form-group">
+										<label class="control-label col-sm-2" for="email">Email:</label>
+										<div class="col-sm-10 col-md-8 " >
+										  <div class="input-group">
+										  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+										  <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+										</div>
+										</div>
+									  </div>
+									  <div class="form-group" >
+									  
+										<label class="control-label col-sm-2" for="pwd">Password:</label>
+										<div class="col-sm-10 col-md-8"> 
+										   <div class="input-group">
+											  <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+											  <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+										   </div>
+										</div>
+									  </div>
+									  <div class="form-group"> 
+										<div class="col-sm-offset-2 col-sm-10 ">
+										  <div class="checkbox">
+											<label><input type="checkbox"> Remember me</label>
+										  </div>
+										</div>
+									  </div>
+									  <div class="form-group"> 
+										<div class="col-sm-offset-2 col-sm-10">
+										  <button type="submit" class="btn btn-primary">Submit</button>
+										</div>
+									  </div>
+								</form>
+							</div>
+							<div class="modal-footer">
+							  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						  </div>
+						  
+						</div>
+					 </div>
+              </ul>           
+            </div><!--/.nav-collapse -->
+          </div>     
+        </nav>  
+      </div>
+      <!-- END MENU -->    
+    </header>
+
+       <section id="courseArchive" >
+      <div class="container">
+        <div class="row">
+          <!-- start course content -->
+          <div class=" col-md-12 col-sm-12" style="margin-top:50px;">
+            <div class="courseArchive_content">
+              <!-- start blog archive  -->
+              <div class="row">
+                <!-- start single blog archive -->
+                <div class="col-lg-12 col-12  col-sm-12">
+                  <div class="single_blog_archive wow fadeInUp">
+                    <div class="blogimg_container">
+                      <a href="#" class="blog_img">
+                        <img alt="img"  class="img-circle" class="img-responsive"src="img/blog3.jpg" style="width:303px; height:236px">
+                      </a>
+                    </div>
+                    <h2 class="blog_title"> Our new brand identity – Your home for health</h2>
+                    <div class="blog_commentbox">
+                      <p><i class="fa fa-user"></i>Ajeet kumar</p>
+                      <p><i class="fa fa-calendar"></i>15 March 2017</p>
+                      
+                    </div>
+                    <p class="blog_summary">9 years ago, we started medicare to help people live healthier, longer lives. The first phase of our journey was with Ray, our clinic management software for doctors. Then 4 years back, we took the second step and launched Practo Search, our consumer offering to help people find the right doctor by getting detailed and verified information about the doctor’s degrees and experience, authentic feedback from other patients, online appointment booking and more....</p>
+                   <button type="button" class="btn btn-info col-md-offset-10" data-toggle="collapse" data-target="#demoId">Read more</button>
+					  <div id="demoId" class="collapse" style=" color: #9b9b9b;line-height: 18px; margin: 10px 5px 10px 0; padding: 0 15px;" >
+						Over the last few years, our consumer offerings have grown to include finding doctors, hospitals, and diagnostic labs, online consultation with doctors, medicine delivery, health articles written by doctors and even storing and secure sharing of digital health records. Apart from Ray, our provider side offerings have grown as well to include Insta, Qikwell, and Querent for various needs of large clinic chains and hospitals.	
+						Over the last year, Medicare various offerings have made significant progress to create a strong platform.<br>
+                        <br>
+						1.	116% growth in patients visiting Practo <br>
+						2.	81% more appointments booked<br>
+						3.	157% growth in reviews on the platform<br>
+						4.	7M records shared on Practo Drive since the launch in March 2017<br>
+						5.	150% growth in online consultations on Medicare<br>
+						6.	60% more enterprise customers including marquee customers such as Max Hospitals, Narayana Health, Manipal Hospitals and more<br>
+						7.	114% growth in patients internationally<br>
+						8.	129% growth in international appointments<br>
+						9.	Medicine delivery to cover Top 7 cities in India by May 2017<br><br>
+						Medicare is now focused on opening the platform to more healthcare stakeholders including insurers, pharmaceutical companies, medical devices companies and others so they can build new services on top of Practo’s platform and deliver a superior healthcare experience for both consumers and providers.
+					  </div>
+                </div>
+				 
+                  </div>
+             
+                <div class="col-lg-12 col-12  col-sm-12">
+                  <div class="single_blog_archive wow fadeInUp">
+                    <div class="blogimg_container">
+                      <a href="#" class="blog_img">
+                        <img alt="img"  class="img-circle" class="img-responsive"src="img/blog1.jpg" style="width:303px; height:236px">
+                      </a>
+                    </div>
+                    <h2 class="blog_title">People below 30 are most depression prone</h2>
+                    <div class="blog_commentbox">
+                      <p><i class="fa fa-user"></i>Siddhant Gupta</p>
+                      <p><i class="fa fa-calendar"></i>09 May 2017</p>
+                    </div>
+                    <p class="blog_summary">Depression is a fast-growing issue. Today on World Health Day, we are releasing the findings from our Healthcare Map that highlight how rapidly this condition is growing. We hope these findings help spread some awareness amongst consumers as well as amongst other stakeholders so together we can fight this and help people live healthier, happier lives....</p>
+                   <button type="button" class="btn btn-info col-md-offset-10" data-toggle="collapse" data-target="#demoId2">Read more</button>
+					  <div id="demoId2" class="collapse" style=" color: #9b9b9b;line-height: 18px; margin: 10px 5px 10px 0; padding: 0 15px;">
+						The Medicare healthcare map is a comprehensive look at the mental health trends across India. Annually, Practo facilitates 50M appointments on its platform. The report is based on those health care appointments that were booked on the platform along with online consultations across top cities in India with the focus on cities including Delhi & NCR, Bangalore, Mumbai, Kolkata, Chennai etc. and across mental health specialties.<br>
+
+						Uniquely, the report is entirely based on actual patient actions (booking appointments; online consultations) rather than a survey.<br><br>
+
+						<b>Report Findings</b><br>
+
+						1. 78% of all doctor appointments related to mental illness booked were by people under 30.<br>
+						2. 79% of all online doctor consultations related to mental illness were done by people under 30.<br>
+						3. People in the age group of 18-24 visited mental health specialists the most followed by growth in the age group of 25-34.<br>
+						4. 62% growth in appointments booked for symptoms like depression and anxiety nationally.<br>
+						5. 4x growth in patients consulting doctors online for such health concerns – meaning that increasingly patients are also exploring consulting doctors. <br> 6. online as it gives them greater privacy and helps avoid the stigma these conditions can sometimes carry.<br>
+						7. Mumbai, Delhi, and Bangalore saw the most appointments with mental health specialists.<br>
+						8. Chennai and Kolkata saw the highest growth (57% and 24% respectively) in these appointments in 2017 as compared to 2017.<br><br>
+						“Depression is becoming a prevalent problem among Indians today and this is because of various factors such as stress, fast paced lives and changing value systems. Many people living in urban cities have been seeking medical help for various mental issues and major depressive disorder (MDD) which often have symptoms such as loss of interest and enjoyment in practically every aspect of life. Added to this are physical symptoms such as heavy headache, backache, insomnia, difficulty in concentration, restlessness, stomach disorders, heaviness in the chest, weakness and blurred vision. It is advised to consult a specialist as depression is treatable by taking proper medication and psychotherapy. The sooner patients seek professional help, the faster they can leave depression behind.” Dr Aarti Jagannathan, Assistant Professor, Department of Psychiatric Social Work/ Psychiatric Rehabilitation Services, National Institute of Mental Health and Neurosciences (NIMHANS)<br><br>
+
+						We hope you find the report useful.<br>
+					  </div>
+                </div>
+				 
+                  </div>
+                <!-- start single blog archive -->
+              </div>
+              <!-- end blog archive  -->
+              
+            </div>
+          </div>
+          <!-- End course content -->
+
+          <!-- start course archive sidebar -->
+         
+          <!-- start course archive sidebar -->
+        </div>
+      </div>
+    </section>
+   
+    <!--=========== END STUDENTS TESTIMONIAL SECTION ================-->    
+    
+   <footer id="footer">
+      <!-- Start footer top area -->
+      <div class="footer_top"  style="box-shadow: 0px 0px 40px 0px #888888">
+        <div class="container">
+          <div class="row">
+            <div class="col-ld-3  col-md-4 col-sm-3">
+              <div class="single_footer_widget" style="font-size:small;padding:10px; ">
+                
+                 <p><font size="4" color="white" font face="verdana" ><span style=" text-transform: uppercase;">Delhi Office</span></p>
+				  <p class="medium"><font size="2" color="white" font face="verdana">Address: Maurya Nagar, Kako Road,Jankpuri, Delhi ,Pin-804417</p>
+				  <p class="medium"><font size="2" color="white" font face="verdana">Phone:+91-7021063163</p>
+				  <p class="medium"><font size="2" color="white" font face="verdana">Email: info@medicare.com</p>
+				
+			  </div>
+			 </div> 
+			   <div class="col-ld-3  col-md-4 col-sm-3">
+              <div class="single_footer_widget" style="font-size:small;padding:10px; ">
+                
+                 <p><font size="4" color="white" font face="verdana" ><span style=" text-transform: uppercase;">Bangalore Office</span></p>
+				  <p class="medium"><font size="2" color="white" font face="verdana">Address: Indra Nagar, MG Road,Bangalore, Karnataka ,Pin-560001</p>
+				  <p class="medium"><font size="2" color="white" font face="verdana">Phone:+91-7549470771</p>
+				  <p class="medium"><font size="2" color="white" font face="verdana">Email: info@medicare.com</p>
+				
+			  </div>
+			 </div> 
+			   <div class="col-ld-3  col-md-4 col-sm-3">
+              <div class="single_footer_widget" style="font-size:small;padding:10px; ">
+                
+                 <p><font size="4" color="white" font face="verdana" ><span style=" text-transform: uppercase;">Noida Office</span></p>
+				  <p class="medium"><font size="2" color="white" font face="verdana">Address: Surya Nagar, karnal Road,Noida, UP  , Pin-341417</p>
+				  <p class="medium"><font size="2" color="white" font face="verdana">Phone:+91-8539978683</p>
+				  <p class="medium"><font size="2" color="white" font face="verdana">Email: info@medicare</p>
+				<br/>
+			  </div>
+			 </div>
+				<div class="col-ld-3  col-md-12 col-sm-3" >
+				  <hr>
+				</div>
+			 
+			<div class="col-ld-3  col-md-4 col-sm-3" style="margin-left:470px;  display: inline;">
+			      <br>
+				     <ul class="footer_social">
+					  <li><a  data-toggle="tooltip" data-placement="top" title="Facebook" class="soc_tooltip" href="#"><i class="fa fa-facebook"></i></a></li>
+					  <li><a data-toggle="tooltip" data-placement="top" title="Twitter" class="soc_tooltip"  href="#"><i class="fa fa-twitter"></i></a></li>
+					  <li><a data-toggle="tooltip" data-placement="top" title="Google+" class="soc_tooltip"  href="#"><i class="fa fa-google-plus"></i></a></li>
+					  <li><a data-toggle="tooltip" data-placement="top" title="Linkedin" class="soc_tooltip"  href="#"><i class="fa fa-linkedin"></i></a></li>
+					  <li><a data-toggle="tooltip" data-placement="top" title="Youtube" class="soc_tooltip"  href="#"><i class="fa fa-youtube"></i></a></li>
+					</ul>
+			</div>
+	
+          </div>
+        </div>
+      </div>
+      <!-- End footer top area -->
+
+    </footer>
+    <!--=========== END FOOTER SECTION ================--> 
+
+  
+
+    <!-- Javascript Files
+    ================================================== -->
+
+    <!-- initialize jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Preloader js file
+    <script src="js/queryloader2.min.js" type="text/javascript"></script> -->
+    <!-- For smooth animatin  -->
+    <script src="js/wow.min.js"></script>  
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- slick slider -->
+    <script src="js/slick.min.js"></script>
+    <!-- superslides slider -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.animate-enhanced.min.js"></script>
+    <script src="js/jquery.superslides.min.js" type="text/javascript" charset="utf-8"></script>   
+    <!-- for circle counter -->
+    <script src='https://cdn.rawgit.com/pguso/jquery-plugin-circliful/master/js/jquery.circliful.min.js'></script>
+    <!-- Gallery slider -->
+    <script type="text/javascript" language="javascript" src="js/jquery.tosrus.min.all.js"></script>   
+   
+    <!-- Custom js-->
+    <script src="js/custom.js"></script>
+   
+
+
+
+
+  </body>
+</html>

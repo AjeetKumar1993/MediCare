@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <title>Medicare : Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="img/logo1.png"/>
+    
+    <!-- CSS
+    ================================================== -->       
+    <!-- Bootstrap css file-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font awesome css file-->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Superslide css file-->
+    <link rel="stylesheet" href="css/superslides.css">
+    <!-- Slick slider css file -->
+    <link href="css/slick.css" rel="stylesheet"> 
+    <!-- Circle counter cdn css file -->
+    <link rel='stylesheet prefetch' href='https://cdn.rawgit.com/pguso/jquery-plugin-circliful/master/css/jquery.circliful.css'>  
+    <!-- smooth animate css file -->
+    <link rel="stylesheet" href="css/animate.css"> 
+   
+    <link rel="stylesheet" href="css/queryLoader.css" type="text/css" />
+    
+    <link type="text/css" media="all" rel="stylesheet" href="css/jquery.tosrus.all.css" /> 
+    <!-- Default Theme css file -->
+    <link id="switcher" href="css/themes/default-theme.css" rel="stylesheet">
+    <!-- Main structure css file -->
+    <link href="style.css" rel="stylesheet">
+   
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>   
+    <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>   
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+ <style>
+body,h1,h2,h3,h4,h5,h6,p {font-family: "Raleway", Arial, Helvetica, sans-serif}
+.myLink {display: none}
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+	
+} 
+</style>
+   
+ 
+  </head>
+  <body ng-app="myApp" ng-controller="myCtrl">    
+
+  
+
+    <!--=========== BEGIN HEADER SECTION ================-->
+    <header id="header" >
+      <!-- BEGIN MENU -->
+      <div class="menu_area" >
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" >  <div class="container">
+            <div class="navbar-header">
+              <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <!-- LOGO -->
+             
+			   <!-- IMG BASED LOGO  -->
+               <!--<a class="navbar-brand" href="index.html"><img src="img/logo1.jpg" style="with:100px;height:40px;margin-top:-20px;" alt="logo"></a> -->
+              <!-- TEXT BASED LOGO -->			   
+              <a class="navbar-brand" href="index1.html">Insan<span>Care</span></a>              
+                   
+                     
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul id="top-menu" class="nav navbar-nav navbar-right main-nav" style=" font-size: small;">
+                <li class="active"><a href="index.html">Home</a></li>
+				 <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">BabyCare<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#"data-toggle="modal" data-target="#babyimmunizaton">Baby Immunization System</a></li>
+             
+					<li><a href="babyDevelopment.html">Baby Development</a></li>
+										
+                  </ul>
+                </li> 
+                <li><a href="PargnancyFile.html">Pregnancy</a></li>
+                <li><a href="finddoctor.html">FindDoctors</a></li>
+				<li><a href="blog.html">Blog</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#contactId">Contact</a></li>                
+                
+				<li><a href="#" data-toggle="modal" data-target="#signId"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#loginId"><span class="glyphicon glyphicon-log-in" ></span> Login</a></li>
+				   <div class="modal fade" id="babyimmunizaton" role="dialog">
+						<div class="modal-dialog">
+						
+						  <!-- Modal content-->
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <button type="button" class="close" data-dismiss="modal">&times;</button>
+							  <h4 class="modal-title">Register Your Babay Details </h4>
+							</div>
+							<div class="modal-body">
+							    <form class="form-horizontal">
+									<div class="form-group">
+										<label for="name" class="col-sm-2 control-label">BabyName:</label>
+										<div class="col-sm-10 col-md-8" >
+											<div class="input-group">
+												<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+												<input type="text" class="form-control" ng-model="name" name="name" id="name"  placeholder="Enter Baby Name"/>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="name" class="col-sm-2 control-label">Parents:</label>
+										<div class="col-sm-10 col-md-8" >
+											<div class="input-group">
+												<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+												<input type="text" class="form-control" ng-model="pname" name="pname" id="pname"  placeholder="Enter Parent Name"/>
+											</div>
+										</div>
+									</div>
+									  <div class="form-group">
+										<label class="control-label col-sm-2" for="email">Email:</label>
+										<div class="col-sm-10 col-md-8 " >
+										  <div class="input-group">
+										  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+										  <input id="email" type="text" class="form-control" ng-model="email" name="email" placeholder="Email">
+										</div>
+										</div>
+									  </div>
+									  <div class="form-group" >
+									  
+										<label class="control-label col-sm-2" for="pwd">Date:</label>
+										<div class="col-sm-10 col-md-8"> 
+										   <div class="input-group">
+											  <span class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+											 <input id="date" type="date" ng-model="date" class="form-control" name="date" >
+										   </div>
+										</div>
+									  </div>
+									  <div class="form-group" >
+									  
+										<label class="control-label col-sm-2" for="pwd">Contact:</label>
+										<div class="col-sm-10 col-md-8"> 
+										   <div class="input-group">
+											  <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+											  <input  type="text" class="form-control" ng-model="contact" name="contact" >
+										   </div>
+										</div>
+									  </div>
+									  <div class="form-group"> 
+										<div class="col-sm-offset-2 col-sm-10 ">
+										  <div class="checkbox">
+											<label><input type="checkbox"> Remember me</label>
+										  </div>
+										</div>
+									  </div>
+									  <div class="form-group"> 
+										<div class="col-sm-offset-2 col-sm-10">
+										  <button type="submit" ng-click="babyDetailsRegister(name ,pname,email,date,contact)" class="btn btn-primary">Register</button>
+										</div>
+									  </div>
+								</form>
+							</div>
+							<div class="modal-footer">
+							  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						  </div>
+						  
+						</div>
+					 </div>  
+			<div class="modal fade" id="contactId" role="dialog">
+				<div class="modal-dialog">
+						
+						  <!-- Modal content-->
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <button type="button" class="close" data-dismiss="modal">&times;</button>
+							  <h4 class="modal-title">Contact Us </h4>
+							</div>
+					<div class="modal-body">
+						<form class="form-horizontal">
+							
+								<div class="form-group">
+									<div class="col-md-10 col-md-offset-1">
+										<input id="lname" name="name" type="text" placeholder="Frist Name" class="form-control">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-md-10 col-md-offset-1">
+										<input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<div class="col-md-10 col-md-offset-1">
+										<input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<div class="col-md-10 col-md-offset-1">
+										<input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<div class="col-md-10 col-md-offset-1">
+										<textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7"></textarea>
+									</div>
+								</div>
+
+								<div class="form-group"> 
+										<div class="col-sm-offset-2 col-md-offset-1 col-sm-10">
+										  <button type="submit" class="btn btn-primary ">Submit</button>
+										</div>
+							    </div>
+							
+						</form>
+						
+					</div>
+							<div class="modal-footer">
+								 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+				</div>
+								  
+			</div>
+		</div>
+				  <div class="modal fade" id="signId" role="dialog">
+						<div class="modal-dialog">
+						
+						  <!-- Modal content-->
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <button type="button" class="close" data-dismiss="modal">&times;</button>
+							  <h4 class="modal-title">Register </h4>
+							</div>
+							<div class="modal-body">
+							    <form class="form-horizontal">
+									<div class="form-group">
+										<label for="name" class="col-sm-2 control-label">YourName</label>
+										<div class="col-sm-10 col-md-8" >
+											<div class="input-group">
+												<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+												<input type="text" class="form-control" ng-model="username" name="username" id="username"  placeholder="Enter your Name"/>
+											</div>
+										</div>
+									</div>
+									  <div class="form-group">
+										<label class="control-label col-sm-2" for="email">Email:</label>
+										<div class="col-sm-10 col-md-8 " >
+										  <div class="input-group">
+										  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+										  <input id="email" type="text" class="form-control" ng-model="email" name="email" placeholder="Email">
+										</div>
+										</div>
+									  </div>
+									  <div class="form-group" >
+									  
+										<label class="control-label col-sm-2" for="pwd">Password:</label>
+										<div class="col-sm-10 col-md-8"> 
+										   <div class="input-group">
+											  <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+											  <input id="password" type="password" ng-model="password" class="form-control" name="password" placeholder="Password">
+										   </div>
+										</div>
+									  </div>
+									  <div class="form-group" >
+									  
+										<label class="control-label col-sm-2" for="pwd">Phone:</label>
+										<div class="col-sm-10 col-md-8"> 
+										   <div class="input-group">
+											  <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+											  <input id="mobile" type="text" class="form-control" ng-model="mobile" name="mobile" placeholder="Mobile Number">
+										   </div>
+										</div>
+									  </div>
+									  <div class="form-group"> 
+										<div class="col-sm-offset-2 col-sm-10 ">
+										  <div class="checkbox">
+											<label><input type="checkbox"> Remember me</label>
+										  </div>
+										</div>
+									  </div>
+									  <div class="form-group"> 
+										<div class="col-sm-offset-2 col-sm-10">
+										  <button type="submit"  ng-click="myFunc(username , email , password ,mobile)" class="btn btn-primary">Register</button>
+										
+										</div>
+										
+									  </div>
+								</form>
+								
+							</div>
+							<div class="modal-footer">
+							  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						  </div>
+						  
+						</div>
+					 </div>
+
+                  <div class="modal fade" id="loginId" role="dialog">
+						<div class="modal-dialog">
+						
+						  <!-- Modal content-->
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <button type="button" class="close" data-dismiss="modal">&times;</button>
+							  <h4 class="modal-title">Login </h4>
+							</div>
+							<div class="modal-body">
+							    <form class="form-horizontal">
+									  <div class="form-group">
+										<label class="control-label col-sm-2" for="email">Email:</label>
+										<div class="col-sm-10 col-md-8 " >
+										  <div class="input-group">
+										  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+										  <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+										</div>
+										</div>
+									  </div>
+									  <div class="form-group" >
+									  
+										<label class="control-label col-sm-2" for="pwd">Password:</label>
+										<div class="col-sm-10 col-md-8"> 
+										   <div class="input-group">
+											  <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+											  <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+										   </div>
+										</div>
+									  </div>
+									  <div class="form-group"> 
+										<div class="col-sm-offset-2 col-sm-10 ">
+										  <div class="checkbox">
+											<label><input type="checkbox"> Remember me</label>
+										  </div>
+										</div>
+									  </div>
+									  <div class="form-group"> 
+										<div class="col-sm-offset-2 col-sm-10">
+										  <button type="submit"  class="btn btn-primary">Submit</button>
+										</div>
+                                          
+									  </div>
+								</form>
+							</div>
+							<div class="modal-footer">
+							  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						  </div>
+						  
+						</div>
+					 </div>
+              </ul>           
+            </div><!--/.nav-collapse -->
+          </div>     
+        </nav>  
+      </div>
+      <!-- END MENU -->    
+    </header>
+    <!--=========== END HEADER SECTION ================--> 
+
+    <!--=========== BEGIN SLIDER SECTION ================-->
+    <section id="slider">
+      <div class="row">
+        <div class="col-lg-12 col-md-12" >
+          <div class="slider_area">
+            <!-- Start super slider -->
+            <div id="slides">
+              <ul class="slides-container">                          
+                <li>
+                  <img src="img/slider/baby3.jpg" alt="img" >
+				  <!-- Give caption on image-->
+                  <!-- <div class="slider_caption">
+                    <h2>Largest & Beautiful University</h2>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <a class="slider_btn" href="#">Know More</a>
+                  </div>-->
+                  </li>
+                <!-- Start single slider-->
+                <li>
+                  <img src="img/slider/baby2.jpg" alt="img">
+                  <!-- <div class="slider_caption slider_right_caption">
+                    <h2>Better Education Environment</h2>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search</p>
+                    <a class="slider_btn" href="#">Know More</a>
+                  </div>-->
+                </li>
+                <!-- Start single slider-->
+                <li>
+                  <img src="img/slider/baby1.jpg" alt="img">
+                  <!-- <div class="slider_caption">
+                    <h2>Find out you in better way</h2>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search</p>
+                    <a class="slider_btn" href="#">Know More</a>
+                  </div>-->
+                </li>
+				<li>
+                  <img src="img/slider/baby4.jpg" alt="img">
+                </li>
+              </ul>
+              <nav class="slides-navigation">
+                <a href="#" class="next"></a>
+                <a href="#" class="prev"></a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=========== END SLIDER SECTION ================-->
+
+    <!--=========== BEGIN ABOUT US SECTION ================-->
+    <section id="aboutUs">
+      <div class="container">
+        <div class="row">
+        <!-- Start about us area -->
+        <div >
+          <div >
+            <h2 class="titile">About Us</h2>
+            <p>Are you looking for a simple way to get the best medical care available? MediCare.com innovative online doctor database gives you access to over 100,000 highly trained medical experts. So you can ask a doctor anything you want, simple with a touch of a finger. You can save as much as 70% of your time and money at your next visit to the doctor and with the assurance that the medical professional you are seeing is highly trained and experienced. We use a stringent verification process to ensure you are 100% satisfied every time. Subscribe to the Medicare Online Doctor network today to get the very best access to free questions, consultations and easy appointments. Join today!<br/>
+            <br>
+			Looking to ask a doctor questions about your health online? Medicare offers a fast, easy and friendly way to gain access to general practitioners, dieticians, nutritionists, gynaecologists, psychologist, dermatologist, sexologist, ayurveda, homeopathy and more. You can get in touch with online doctors 24 hours a day, 7 days a week with this simple application. No matter what your condition, Medicare can get you in touch with a doctor online straight away. To find out more, subscribe to our ask a doctor service online or download the app and get access to doctors on the go!<br/>
+            <br>
+			Not only does Medicare give you access to online medical professionals, we also have regular blogs from respected experts that give you tips and advice on health and well being. Our doctors discuss a range of topics from everyday living, parenting, pregnancy and how to manage your conditions, all online and accessible from your computer, phone or tablet. Simply download the app and get access to free questions, consultations and easy appointments. Get your health feed now with Medicare and ask a doctor what you've always wanted to know!
+			</p>
+          </div>
+        </div>
+      
+      </div>
+      </div>
+    </section>
+    <!--=========== END ABOUT US SECTION ================--> 
+
+    <!--=========== BEGIN WHY US SECTION ================-->
+    <section id="whyUs">
+      <!-- Start why us top -->
+      <div class="row">        
+        <div class="col-lg-12 col-sm-12">
+          <div class="whyus_top">
+            <div class="container">
+              <!-- Why us top titile -->
+              <div class="row">
+                <div class="col-lg-12 col-md-12"> 
+                  <div class="title_area">
+                    <h2 class="title_two">Why use MediCare </h2>
+                    <span></span> 
+                  </div>
+                </div>
+              </div>
+              <!-- End Why us top titile -->
+              <!-- Start Why us top content  -->
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                  <div class="single_whyus_top wow fadeInUp">
+                    <div class="whyus_icon">
+                      <span class="fa fa-user-md"></span>
+                    </div>
+                    <h3>100,000+ verified doctors</h3>
+                    <p>All doctors on Medicare go through a stringent verification process</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                  <div class="single_whyus_top wow fadeInUp">
+                    <div class="whyus_icon">
+                      <span class="fa fa-heart-o"></span>
+                    </div>
+                    <h3>24*7 access to healthcare</h3>
+                    <p>Easy access to the best doctors anytime, anywhere</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                  <div class="single_whyus_top wow fadeInUp">
+                    <div class="whyus_icon">
+                      <span class="fa fa-inr"></span>
+                    </div>
+                    <h3>Save time & money</h3>
+                    <p>Save upto 70% in time and money spent for consultation</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                  <div class="single_whyus_top wow fadeInUp">
+                    <div class="whyus_icon">
+                      <span class="fa fa-clock-o"></span>
+                    </div>
+                    <h3>100% care guaranteed</h3>
+                    <p>We'll refund your money if you're not satisfied with our service
+</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Why us top content  -->
+            </div>
+          </div>
+        </div>        
+      </div>
+      <!-- End why us top -->
+
+      <!-- Start why us bottom -->
+     
+      <!-- End why us bottom -->
+    </section>
+    <!--=========== END WHY US SECTION ================-->
+
+    <!--=========== BEGIN OUR COURSES SECTION ================-->
+    
+        <!-- End Our courses titile -->
+        <!-- Start Our courses content -->
+       
+    <!--=========== END OUR COURSES SECTION ================-->  
+
+    <!--=========== BEGIN OUR TUTORS SECTION ================-->
+    <section id="ourTutors">
+      <div class="container">
+       <!-- Our courses titile -->
+        <div class="row">
+          <div class="col-lg-12 col-md-12"> 
+            <div class="title_area">
+              <h2 class="title_two">Doctors Say</h2>
+              <span></span> 
+            </div>
+          </div>
+        </div>
+        <!-- End Our courses titile -->
+
+        <!-- Start Our courses content -->
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="ourTutors_content">
+              <!-- Start Tutors nav -->
+              <ul class="tutors_nav">
+                <li>
+                  <div class="single_tutors">
+                    <div class="tutors_thumb">
+                      <img src="img/doctor1.jpg" />                      
+                    </div>
+                    <div class="singTutors_content">
+                      <h3 class="tutors_name">Dr. Shukla</h3>
+                      <span>Ayurveda, Hyderabad</span>
+                      <p>"Healers lets me connect with my patients beautifully. Just a few clicks, and all my patients get the necessary Dos and Don'ts in a flash. Good work Lybrate."</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="single_tutors">
+                    <div class="tutors_thumb">
+                      <img src="img/doctor2.jpg" />                      
+                    </div>
+                    <div class="singTutors_content">
+                      <h3 class="tutors_name">Dr. B.D Gupta</h3>
+                      <span>Pediatric Dentist, Hyderabad</span>
+                      <p>"I never thought that online consultation could be as easy and effective. It's a win-win situation for both doctors and patients. Good work, Lybrate Team.</p>
+                    </div>
+                  
+                  </div>
+                </li>
+                <li>
+                  <div class="single_tutors">
+                    <div class="tutors_thumb">
+                      <img src="img/doctor3.jpg" />                      
+                    </div>
+                    <div class="singTutors_content">
+                      <h3 class="tutors_name">Dr. Partha Bose</h3>
+                      <span>Pulmonologist, Delhi</span>
+                      <p>"I am loving this Healers feature from Lybrate. I post my articles and tips here and reach out to the patient community which really needs my expertise. A simple yet great connecting platform."</p>
+                    </div>
+                   
+                  </div>
+                </li>
+                <li>
+                  <div class="single_tutors">
+                    <div class="tutors_thumb">
+                      <img src="img/doctor4.jpg" />                      
+                    </div>
+                    <div class="singTutors_content">
+                      <h3 class="tutors_name">Dr. Asha Sinha</h3>
+                      <span>Dermatologist, Jaipur</span>
+                      <p>"I have been searching for ways to take my practice to other parts of the country. There were annoying time constraints. Thanks to Lybrate, now I guess I have discovered the way to do it."</p>
+                    </div>
+                   
+                  </div>
+                </li>
+                <li>
+                  <div class="single_tutors">
+                    <div class="tutors_thumb">
+                      <img src="img/doctor6.jpg" />                      
+                    </div>
+                    <div class="singTutors_content">
+                      <h3 class="tutors_name">Dr. Sapna Yadav</h3>
+                      <span>Heart Specialist, Indor</span>
+                      <p>A cardiologist is a doctor with special training and skill in finding, treating and preventing diseases of the heart and blood vessels.</p>
+                    </div>
+                   
+                  </div>
+                </li>
+                <li>
+                  <div class="single_tutors">
+                    <div class="tutors_thumb">
+                      <img src="img/doctor7.jpg" />                      
+                    </div>
+                    <div class="singTutors_content">
+                      <h3 class="tutors_name">Dr. Anudit Gupta</h3>
+                      <span>Dermatologist, Patna</span>
+                      <p>Skin problems are extremely common, affecting 10% of the population worldwide. Family Physicians are generally well versed with identifying and treating common conditions affecting the skin. </p>
+                    </div>
+                   
+                  </div>
+                </li>                                             
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End Our courses content -->
+      </div>
+    </section>
+    <!--=========== END OUR TUTORS SECTION ================-->
+
+    <!--=========== BEGIN STUDENTS TESTIMONIAL SECTION ================-->
+    <section id="studentsTestimonial">
+      <div class="container">
+       <!-- Our courses titile -->
+        <div class="row">
+          <div class="col-lg-12 col-md-12"> 
+            <div class="title_area">
+              <h2 class="title_two">What our Client says</h2>
+              <span></span> 
+            </div>
+          </div>
+        </div>
+        <!-- End Our courses titile -->
+
+        <!-- Start Our courses content -->
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="studentsTestimonial_content">              
+              <div class="row">
+                <!-- start single student testimonial -->
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="single_stsTestimonial wow fadeInUp">
+                    <div class="stsTestimonial_msgbox">
+                      <p>Dr. Sapna Yadav was absolutely wonderful in answering all of my questions quickly, clearly, concisely, and reassuringly. It is wonderful to have an online service such as this to ask any and all dermatology related questions to an expert! I've used this service three times already.</p>
+                    </div>
+                    <img class="stsTesti_img" src="img/sid.jpg" alt="img">
+                    <div class="stsTestimonial_content">
+                      <h3>Mr. Siddhant Gilohtra</h3>                      
+                      <span>PWC(Cyber Security analysts)</span>
+                      
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="single_stsTestimonial wow fadeInUp">
+                    <div class="stsTestimonial_msgbox">
+                      <p>Quick response but most of all I found Dr. Anudit very thorough, helpful and it feels as if i was in he's clinic to see him without leaving the house. Great service.<br><br><br></p>
+                    </div>
+                    <img class="stsTesti_img" src="img/ajeet.jpg" alt="img">
+                    <div class="stsTestimonial_content">
+                      <h3>Mr. Ajeet kumar</h3>                      
+                      <span>Reliance Jio(Assistance  Manager)</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="single_stsTestimonial wow fadeInUp">
+                    <div class="stsTestimonial_msgbox">
+                      <p>You get to speak to an expert without a long wait for an appointment. Consultations can be carried out from the comfort of your own home. A friendly and polite service. Thank you for your help and advice.<br><br><br></p>
+                    </div>
+                    <img class="stsTesti_img" src="img/som.jpg" alt="img">
+                    <div class="stsTestimonial_content">
+                      <h3>Mr. Somendra Gaushania </h3>                      
+                      <span>TechGig(Dupty Manager)</span>
+                      
+                    </div>
+                  </div>
+                </div>
+                <!-- End single student testimonial -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Our courses content -->
+      </div>
+    </section>
+    <!--=========== END STUDENTS TESTIMONIAL SECTION ================-->    
+    
+    <!--=========== BEGIN FOOTER SECTION ================-->
+    <footer id="footer">
+      <!-- Start footer top area -->
+      <div class="footer_top"  style="box-shadow: 0px 0px 40px 0px #888888">
+        <div class="container">
+          <div class="row">
+            <div class="col-ld-3  col-md-4 col-sm-3">
+              <div class="single_footer_widget" style="font-size:small;padding:10px; ">
+                
+                 <p><font size="4" color="white" font face="verdana" ><span style=" text-transform: uppercase;">Delhi Office</span></p>
+				  <p class="medium"><font size="2" color="white" font face="verdana">Address: Maurya Nagar, Kako Road,Jankpuri, Delhi ,Pin-804417</p>
+				  <p class="medium"><font size="2" color="white" font face="verdana">Phone:+91-7021063163</p>
+				  <p class="medium"><font size="2" color="white" font face="verdana">Email: info@medicare.com</p>
+				
+			  </div>
+			 </div> 
+			   <div class="col-ld-3  col-md-4 col-sm-3">
+              <div class="single_footer_widget" style="font-size:small;padding:10px; ">
+                
+                 <p><font size="4" color="white" font face="verdana" ><span style=" text-transform: uppercase;">Bangalore Office</span></p>
+				  <p class="medium"><font size="2" color="white" font face="verdana">Address: Indra Nagar, MG Road,Bangalore, Karnataka ,Pin-560001</p>
+				  <p class="medium"><font size="2" color="white" font face="verdana">Phone:+91-7549470771</p>
+				  <p class="medium"><font size="2" color="white" font face="verdana">Email: info@medicare.com</p>
+				
+			  </div>
+			 </div> 
+			   <div class="col-ld-3  col-md-4 col-sm-3">
+              <div class="single_footer_widget" style="font-size:small;padding:10px; ">
+                
+                 <p><font size="4" color="white" font face="verdana" ><span style=" text-transform: uppercase;">Noida Office</span></p>
+				  <p class="medium"><font size="2" color="white" font face="verdana">Address: Surya Nagar, karnal Road,Noida, UP  , Pin-341417</p>
+				  <p class="medium"><font size="2" color="white" font face="verdana">Phone:+91-8539978683</p>
+				  <p class="medium"><font size="2" color="white" font face="verdana">Email: info@medicare</p>
+				<br/>
+			  </div>
+			 </div>
+				<div class="col-ld-3  col-md-12 col-sm-3" >
+				  <hr>
+				</div>
+			 
+			<div class="col-ld-3  col-md-4 col-sm-3" style="margin-left:470px;  display: inline;">
+			      <br>
+				     <ul class="footer_social">
+					  <li><a  data-toggle="tooltip" data-placement="top" title="Facebook" class="soc_tooltip" href="#"><i class="fa fa-facebook"></i></a></li>
+					  <li><a data-toggle="tooltip" data-placement="top" title="Twitter" class="soc_tooltip"  href="#"><i class="fa fa-twitter"></i></a></li>
+					  <li><a data-toggle="tooltip" data-placement="top" title="Google+" class="soc_tooltip"  href="#"><i class="fa fa-google-plus"></i></a></li>
+					  <li><a data-toggle="tooltip" data-placement="top" title="Linkedin" class="soc_tooltip"  href="#"><i class="fa fa-linkedin"></i></a></li>
+					  <li><a data-toggle="tooltip" data-placement="top" title="Youtube" class="soc_tooltip"  href="#"><i class="fa fa-youtube"></i></a></li>
+					</ul>
+			</div>
+	
+          </div>
+        </div>
+      </div>
+      <!-- End footer top area -->
+
+    </footer>
+    <!--=========== END FOOTER SECTION ================--> 
+
+
+
+    <!-- Javascript Files
+    ================================================== -->
+ 
+    <!-- initialize jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Preloader js file
+    <script src="js/queryloader2.min.js" type="text/javascript"></script> -->
+    <!-- For smooth animatin  -->
+    <script src="js/wow.min.js"></script>  
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- slick slider -->
+    <script src="js/slick.min.js"></script>
+    <!-- superslides slider -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.animate-enhanced.min.js"></script>
+    <script src="js/jquery.superslides.min.js" type="text/javascript" charset="utf-8"></script>   
+    <!-- for circle counter -->
+    <script src='https://cdn.rawgit.com/pguso/jquery-plugin-circliful/master/js/jquery.circliful.min.js'></script>
+    
+    <script type="text/javascript" language="javascript" src="js/jquery.tosrus.min.all.js"></script>   
+   
+    <!-- Custom js-->
+    <script src="js/custom.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript" async="async" defer="defer" data-cfasync="false"  src="https://mylivechat.com/chatinline.aspx?hccid=84379790"></script>
+  
+  </body>
+</html>
